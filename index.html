@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html style="padding: 5px;">
+	<head>
+		<meta charset="utf-8" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+		<script src="index.js" defer></script>
+	</head>
+	<body>
+		<div class="row">
+			<form class="col s12" id="search-form">
+				<div class="row">
+					<div class="input-field col s6">
+						<input placeholder="Your Query" id="query" type="search" class="validate">
+						<label for="query">Search</label>
+						<span class="helper-text">Results might appear more than bargained for, but it is due to employing a different approach in lemmatizing tokens</span>
+					</div>
+					<div class="input-field col s2">
+						<input placeholder="α = 0.005" id="alpha" type="text" class="validate">
+						<label for="alpha">α-value</label>
+						<span class="helper-text">Make sure the α-value is a valid floating-point value between 0-1</span>
+					</div>
+					<div class="input-field col s4">				
+						<button type="submit" class="waves-effect waves-light btn" onclick="search()">
+							<i class="material-icons right">search</i>
+							Search
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="row" id="results" style="padding: 10px 0 0 0">
+			
+		</div>
+	</body>
+</html>
